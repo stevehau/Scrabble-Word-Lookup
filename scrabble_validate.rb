@@ -1,7 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
-require 'data_mapper' 
+require 'data_mapper'
+require 'dm-postgres-adapter'
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/words.db")
 
