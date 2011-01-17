@@ -1,0 +1,11 @@
+%h2.header= @word.name
+.buttonset
+  %p.center
+    = @word.point_value
+    Points
+  %p
+.buttonset
+  %a.button(href='/words/delete/#{@word.id}') Remove Word
+  %a.button(href='/') Validate Word
+  %a.button(href='/words') Word List
+  %a.button(href='/import') Import Words

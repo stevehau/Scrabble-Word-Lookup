@@ -1,0 +1,280 @@
+html {
+	height: 100%;
+}
+
+body { 
+  font: 16px/18px helvetica; 
+  background-color: #FFFFFF;
+  color: #444;
+  min-height: 100%;
+  margin-top: 0;}
+
+
+/* --- Typography --- */
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+ul.posts {
+  padding-left: 0;
+	margin-top: 0;
+}
+
+li.word {
+	width: 20%;
+    margin: 0 auto;
+}
+ul.posts li {
+  list-style-type: none;
+}
+h1 {
+  font-weight: bold;
+  width: 70%;
+  letter-spacing: -1px;
+  font-size: 200%;
+  line-height: 108%;
+  color: #000;
+}
+
+h1.header {
+	text-align: center;
+	margin-left: 0px;
+	width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+  color: #111;
+  font-size: 146.5%;
+}
+
+h2.header {
+  color: #000;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p.header {
+	font-weight: bold;
+}
+a       { color: #346d94; text-decoration: none; }
+a:hover { color: #0096bf; }
+p.date {
+  color: #999;
+  font-style: italic;
+  font-size: 11pt;
+}
+
+p.center {
+	width: 55%;
+	margin: 0 auto;
+}
+
+p.center2 {
+	width: 40%;
+	margin: 0 auto;
+}
+dd {
+	margin-bottom: 8px;
+}
+
+/* --- Sections --- */
+
+#header  { background-color:#ccc; margin:auto; padding:30px 0; text-align:center; }
+#footer  { background-color:#ccc; margin:auto; padding:30px 0; text-align:center; }
+#content { background-color:#ccc; margin:auto; padding-bottom:60px; }
+
+.buttonset {
+  margin: 10px auto 0px auto;
+  text-align: center;
+  margin-bottom: 12px
+}
+
+.button {
+  margin: 0px auto;
+  padding: 5;
+  color: #346d94;
+  font-size: 1em;
+  font-weight: bold;}
+
+.button.form {
+  color: #346d94;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px auto;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
+  
+  }
+
+.button:hover {
+  color: #0096bf;
+  background: #EEEEEE;
+}
+
+#errors {
+  color: red; }
+
+
+.highlight,
+.informant_field {
+  border: 1px solid #eee;
+/*  background-color: #f6f6f6;*/
+  padding: 10px 12px 0 12px;
+  margin-bottom: 12px;
+}
+
+.numeric { text-align:right; }
+.bold { font-weight:bold; }
+
+
+/* --- Tables --- */
+table {
+	
+}
+table.show {
+	margin-bottom: 20px;
+}
+td, th {
+	border: none;
+	padding: 2px 12px 0 0;
+}
+th {
+  border-bottom: 1px solid #999;
+}
+
+td.header {
+	border-bottom: 1px solid #999;
+}
+
+td.entry {
+	font-color
+}
+
+td.option {
+	
+}
+
+/* --- Forms --- */
+
+input.search {
+	width: 130px;
+	padding:5px;
+}
+fieldset.search    { border: 0px;
+	float: left;
+	padding:0 0 0 0; margin: 0 0 0 0;
+	 }
+
+
+label {    
+float: left;    
+width: 10em;    
+margin-right: 1em;    
+text-align: left;  
+}
+
+input[type=text], input[type=password],
+input.text, input.title,
+textarea {
+  background-color:#fff;
+  border:1px solid #bbb;
+}
+
+input[type=text]:focus, input[type=password]:focus,
+input.text:focus, input.title:focus,
+textarea:focus {
+  border-color:#666;
+  background-color:#f6f6f6;
+}
+
+input.import{
+	width: 100%;
+	margin: 0 auto;
+}
+
+input.valid{
+	width: 40%;
+	margin: 0 auto;
+
+}
+
+input.import{
+	width: 40%;
+	padding-right: 200px; 
+}
+
+form.center {
+	width: 60%;
+    margin: 0 auto;
+}
+
+input.text,
+input.title   { width: 300px;}
+input.title   { font-size:1.5em; }
+textarea      { width: 390px; height: 250px;}
+
+.form_field .description {
+  	margin-top: -8px;
+  	font-size: 85%;
+}
+#features_field label {
+  	display: inline;
+  	font-weight: normal;
+}
+.submit {
+	padding: 2px;
+	border: none;
+	color: #346d94 
+}
+
+.submit:hover {
+	color: #0096bf;	
+}
+input, select, textarea {
+	background-color: white;
+	padding: 1px;
+	margin-bottom: 12px;
+
+}
+
+textarea:hover{
+	color: #0096bf;
+}
+
+input label {
+	padding: 2px;
+	border: none;
+	color: #346d94 
+}
+
+.required {
+  color: red;
+}
+
+/* --- Navbar --- */
+#navbar {
+  margin: 0;
+  white-space: nowrap;
+}
+#navbar li {
+  display: inline;
+  list-style-type: none;
+}
+#navbar a {
+  display: block;
+  float: left;
+  width: 130px;
+  height: 16px;
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 20px;
+
+}
+#navbar a:link,
+#navbar a:visited { color: #666; }
+#navbar a:hover   { color: #000000; }

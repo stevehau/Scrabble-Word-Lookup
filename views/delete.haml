@@ -1,0 +1,6 @@
+%h3 Are you sure you want to delete #{@word.name}?
+%form(action="/words/#{@word.id}" method="post" class="form1")
+  %input(type="hidden" name="_method" value="DELETE")
+  %input(type="submit" class="button" value="Delete")
+  %a(href='/words')
+    %input(type="button" class="button" value="Back")

@@ -1,0 +1,9 @@
+%form.center(action="/words" method="POST" class="form_field")
+  %fieldset
+    %input.valid(type="text" name="name" class ="title")
+    %input.button.form(type="submit" class="submit" value="Add Word")
+
+.buttonset
+  %a.button(href='/') Validate Word
+  %a.button(href='/words/list/a') Word List
+  %a.button(href='/import') Import Words

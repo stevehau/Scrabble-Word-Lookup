@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title= @title
+    / Blueprint Style Sheets 
+    %link{:rel=>"stylesheet", :href=>"/css/blueprint/screen.css", :type=>"text/css", :media=>"screen, projection"}
+    %link{:rel=>"stylesheet", :href=>"/css/blueprint/print.css", :type=>"text/css", :media=>"print"}
+    %link{:rel=>"stylesheet", :href=>"/css/blueprint/ie.css", :type=>"text/css", :media=>"screen, projection"}
+      / Custom Style Sheet
+    %link{:rel=>"stylesheet", :href=>"/css/styles.css", :type=>"text/css", :media=>"screen, projection"}
+    
+  %body
+    .container
+      .span-16.last.prepend-4
+        .span-16#header
+          %h1.header Scrabble Word Lookup
+        .span-16#content
+          %h2.header= @title
+          =yield
+        .span-16#footer
+          %p 
+          &copy; Alex Meub 2011 &#8226;
+          Sinatra Version 
+          = Sinatra::VERSION
+          &#8226; Ruby Version
+          = RUBY_VERSION
+      .span-4.last

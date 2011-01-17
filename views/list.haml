@@ -1,0 +1,21 @@
+.buttonset
+  %a.button(href='/validate') Validate Word
+  %a.button(href='/words/new') Add Word
+  %a.button(href='/import') Import Words
+
+.buttonset
+  - ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'].each      do |letter|
+    %a.button(href='/words/list/#{letter}') #{letter.upcase}
+  %a.button(href='/words') All
+
+- unless @words.empty?
+  %ul
+    - @words.each do |word|
+      %li.word{:id => "word-#{word.id}"}
+        %h2.header
+          %a(href="/words/#{word.id}")= word.name
+        %p.center 
+          =word.point_value
+          points
+- else
+  %h2.header No words!

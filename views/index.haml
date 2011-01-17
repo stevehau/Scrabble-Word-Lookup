@@ -1,0 +1,13 @@
+- unless @words.empty?
+  %ul
+    - @words.each do |word|
+      %li.word{:id => "word-#{word.id}"}
+        %h2.header
+          %a(href="/words/#{word.id}")= word.name
+- else
+  %p No words!
+
+.buttonset
+  %a.button(href='/validate') Validate Word
+  %a.button(href='/words/new') Add Word
+  %a.button(href='/import') Import Words

@@ -1,0 +1,8 @@
+%form.center{:action=>"/import",:method=>"post",:enctype=>"multipart/form-data"}
+  %input.import{:type=>"file", :class=> "import", :name=>"file"}
+  %input.button.form{:type=>"submit", :class=> "submit",:value=>"Upload"}
+
+.buttonset
+  %a.button(href='/words/list/a') Word List
+  %a.button(href='/validate') Validate Word
+  %a.button(href='/words/new') Add Word
