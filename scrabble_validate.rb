@@ -3,7 +3,7 @@ require 'sinatra'
 require 'haml'
 require 'data_mapper' 
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/words2.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/words.db")
 
 #DATABASE
 

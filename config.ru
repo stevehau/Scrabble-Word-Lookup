@@ -1,2 +1,2 @@
-require './scrabble_validate'
+require './scrabble'
 run Sinatra::Application
